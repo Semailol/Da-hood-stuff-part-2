@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalManMan/OtherWl/main/AimlockNew.lua", true))()

@@ -1,0 +1,16 @@
+_G.Number = 500;
+while wait() do
+    pcall(function()
+        for _, v in pairs(game:GetService('Players'):GetPlayers()) do
+            if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+                if v.Character:FindFirstChild('BodyEffects'):FindFirstChild('K.O') then
+                    for _, v in pairs(v.Character:GetChildren()) do
+                        if v:IsA('BasePart') then
+                            v.Velocity = Vector3.new(_G.Number, _G.Number, _G.Number);
+                        end
+                    end;
+                end;
+            end;
+        end;
+    end);
+end;

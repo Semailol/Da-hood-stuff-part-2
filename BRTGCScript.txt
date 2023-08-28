@@ -1,0 +1,19 @@
+while wait(0.1) do
+
+noclip = true
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-910.805603, 553.844971, -1504.34473)
+
+local A_1 = "Safe"
+local Event = game:GetService("ReplicatedStorage").Systems["Raid System"].Events.OnRaidStart
+Event:FireServer(A_1)
+
+local A_1 = "Safe"
+local Event = game:GetService("ReplicatedStorage").Systems["Raid System"].Events.OnRaidInteract
+Event:FireServer(A_1)
+end
